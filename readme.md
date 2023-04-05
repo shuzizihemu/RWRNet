@@ -10,8 +10,7 @@ you can download at
 
 [AI Studio](https://aistudio.baidu.com/aistudio/datasetdetail/206011)
 
-[Baidu Netdisk(链接：https://pan.baidu.com/s/1Vquf1WdyW28-e_thgjYsXA?pwd=2022 
-提取码：2022)](https://pan.baidu.com/s/1Vquf1WdyW28-e_thgjYsXA?pwd=2022 )
+[Baidu Netdisk](https://pan.baidu.com/s/1Vquf1WdyW28-e_thgjYsXA?pwd=2022 )
 
 
 
@@ -21,7 +20,7 @@ you can download at
 
 [Google Drive](https://drive.google.com/file/d/1pRyS4DheZWPVMFdPcJTHT79RqUtEksOn/view?usp=sharing)
 
-[Baidu Netdisk链接：https://pan.baidu.com/s/1zzDbuw_pON5K2LB7z-GpJg?pwd=2022 提取码：2022](https://pan.baidu.com/s/1zzDbuw_pON5K2LB7z-GpJg?pwd=2022)
+[Baidu Netdisk](https://pan.baidu.com/s/1zzDbuw_pON5K2LB7z-GpJg?pwd=2022)
 
 We trained 100 epochs on this dataset.
 
