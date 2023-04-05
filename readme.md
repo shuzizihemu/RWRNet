@@ -7,7 +7,8 @@ Thanks for your attention
 you can download at [SDIWRD](https://drive.google.com/file/d/1adp32bOPN_O34L2RYmGshd3xUgaLdp-T/view?usp=sharing)
 
 
-## 2. Compare with state of the art methods
-
+## 2. Pretain Model
+you can download at [RWRNet Pretain Model](https://drive.google.com/file/d/1pRyS4DheZWPVMFdPcJTHT79RqUtEksOn/view?usp=sharing)
+We trained 100 epochs on this dataset.
 
 
