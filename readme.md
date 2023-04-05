@@ -1,5 +1,5 @@
 ## A Two-Stage Document Image Visible Watermark Removal Model Based on Global and Local Features
-Thanks for your attention
+Thanks for your attention. The code will be open sourced once the paper is accepted.
 ![](readme.assets/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%842.png)
 
 ## 1. Datasets link
