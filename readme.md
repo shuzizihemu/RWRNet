@@ -1,4 +1,4 @@
-## 
+## A Two-Stage Document Image Visible Watermark Removal Model Based on Global and Local Features
 Thanks for your attention
 ![](readme.assets/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%842.png)
 
