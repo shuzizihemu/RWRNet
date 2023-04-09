@@ -22,6 +22,6 @@ you can download at
 
 [Baidu Netdisk](https://pan.baidu.com/s/1zzDbuw_pON5K2LB7z-GpJg?pwd=2022)
 
-We trained 100 epochs on this dataset.
+We trained 100 epochs on SDIWRD.
 
 
