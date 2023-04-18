@@ -6,7 +6,7 @@ Thanks for your attention. The code will be open sourced after the paper is acce
 
 you can download at 
 
-[Google Drive](https://drive.google.com/file/d/1adp32bOPN_O34L2RYmGshd3xUgaLdp-T/view?usp=sharing)
+
 
 [AI Studio](https://aistudio.baidu.com/aistudio/datasetdetail/206011)
 
@@ -18,7 +18,7 @@ you can download at
 ## 2. Pretain Model
 you can download at 
 
-[Google Drive](https://drive.google.com/file/d/1pRyS4DheZWPVMFdPcJTHT79RqUtEksOn/view?usp=sharing)
+
 
 [Baidu Netdisk](https://pan.baidu.com/s/1zzDbuw_pON5K2LB7z-GpJg?pwd=2022)
 
