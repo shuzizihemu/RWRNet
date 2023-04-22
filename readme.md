@@ -8,7 +8,7 @@ you can download at
 
 
 
-[AI Studio](https://aistudio.baidu.com/aistudio/datasetdetail/206011)
+
 
 [Baidu Netdisk](https://pan.baidu.com/s/1Vquf1WdyW28-e_thgjYsXA?pwd=2022 )
 
