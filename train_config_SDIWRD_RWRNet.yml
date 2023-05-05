@@ -1,0 +1,30 @@
+GPU: [ 0 ]
+SEED: 42
+VERBOSE: True
+
+# 实验名称
+MODEL:
+  EXPERMENT_NAME: "RWRNet_SDIWRD"
+
+# 超参数
+OPTIM:
+  BATCH_SIZE: 4
+  T_MAX: 1600000   # we don't use this
+  NUM_ITERS: 1600000 # we don't use this
+  LR_INITIAL: 2e-4 # 学习率不能调高了，否则loss会很大
+
+# 其他参数
+TRAINING:
+  START_EPOCH: 1
+  END_EPOCH: 100
+  TRAIN_PS: 256 # we don't use this
+  VAL_PS: 256   # we don't use this
+  RESUME: False # 是否从接着之前停止的训练，继续训练: 设置为True 或者 False
+  RESUME_PATH: None # 如果不指定权重在哪里，请设置为None，将会自动从SAVE_ROOT/EXPERMENT_NAME/models/model_best.pdparams 加载权重；否则请手动指定权重的位置
+  PRINT_FREQ: 100
+  TRAIN_DIR: '/home/harry/Python_Demo/Datasets/SDIWRD' # path to training data
+  VAL_DIR: '/home/harry/Python_Demo/Datasets/SDIWRD'     # path to validation data
+  SAVE_ROOT: "output" # 保存结果的根目录，即当前目录下的output文件夹
+  SAVE_IMAGES: True # 是否在训练的时候保存结果
+  VAL_AFTER_EVERY: 1 # we don't use this
+

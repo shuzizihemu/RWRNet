@@ -1,0 +1,24 @@
+GPU: [ 0 ]
+SEED: 42
+VERBOSE: True
+
+# 因为是预测阶段，需要修改 MODEL.EXPERMENT_NAME 、TRAINING.VAL_DIR
+MODEL:
+  EXPERMENT_NAME : "TEST"
+
+
+
+TRAINING:
+  START_EPOCH: 1
+  END_EPOCH: 2
+  TRAIN_PS: 256
+  VAL_PS: 256
+  RESUME: True # 如果加载权重恢复训练请打开此选项，设置为True
+  RESUME_PATH: '/home/harry/Python_Demo/PaddleBased/RWRNet/version8/output/RWRNet/models/model_best.pdparams' # 如果不指定，请设置为None，将会自动从SAVE_ROOT/EXPERMENT_NAME/models/model_best.pdparams 加载权重；否则请手动指定详细权重位置
+  PRINT_FREQ: 100
+  TRAIN_DIR: '/home/harry/Python_Demo/Datasets/SDIWRD'
+  VAL_DIR: '/home/harry/Python_Demo/Datasets/SDIWRD'     #！！！！！！！！！！！！！！这个也需要修改
+  SAVE_ROOT: "output" # 保存结果的根目录，即当前目录下的output文件夹
+  SAVE_IMAGES: True
+  VAL_AFTER_EVERY: 1 # 暂未设置
+
