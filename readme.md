@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ```shell
 # train
-python train_config_SDIWRD_RWRNet.yml 
+python train_SDIWRD_RWRNet.py
 ```
 
 ```shell
