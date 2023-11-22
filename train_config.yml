@@ -1,0 +1,25 @@
+GPU: [ 0 ]
+SEED: 42
+VERBOSE: True
+
+MODEL:
+  EXPERMENT_NAME : "RWRNet"
+
+OPTIM:
+  BATCH_SIZE: 4
+  T_MAX: 1600000
+  NUM_ITERS: 1600000
+  LR_INITIAL: 2e-4
+
+TRAINING:
+  START_EPOCH: 1
+  END_EPOCH: 100
+  TRAIN_PS: 256
+  VAL_PS: 256
+  RESUME: False
+  RESUME_PATH: None
+  PRINT_FREQ: 100
+  TRAIN_DIR: 'SDIWRD'   # path to training data
+  VAL_DIR: 'SDIWRD'     # path to validation data
+  SAVE_ROOT: "output"
+  SAVE_IMAGES: True

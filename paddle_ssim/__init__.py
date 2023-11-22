@@ -4,9 +4,7 @@
 #@Author:JFZ
 #@File：__init__.py.py
 #@Software: PyCharm
-    用来做损失函数
 """
-
 # https://github.com/Po-Hsun-Su/pytorch-ssim/blob/master/pytorch_ssim/__init__.py
 import paddle
 from paddle import nn
@@ -125,5 +123,4 @@ class LOGSSIM(nn.Layer):
 def ssim(img1, img2, window_size=11, size_average=True):
     (_, channel, _, _) = img1.shape
     window = create_window(window_size, channel)
-
     return _ssim(img1, img2, window, window_size, channel, size_average).item()

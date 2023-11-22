@@ -1,58 +1,51 @@
-## A Two-Stage Document Image Visible Watermark Removal Model Based on Global and Local Features
+# 配置环境
+
+为了让您更好地配置环境，我们整理了以下表格，详细列出了您需要的硬件和软件环境。请参考以下内容：
+
+| **配置项**       | **要求**                            |
+| :--------------- | :---------------------------------- |
+| 操作系统         | Ubuntu 20.04                        |
+| CPU              | Intel Core i5 12400F                |
+| GPU              | NVIDIA GeForce RTX 3080（12GB显存） |
+| 内存             | 32GB                                |
+| Python 版本      | 3.7                            |
+| 深度学习框架版本 | PaddlePaddle 2.3.0                  |
+| CUDA 版本        | 11.6                           |
+| cuDNN 版本       | cuDNN 8.4.0                    |
 
 
 
-Thank you for your attention to our work. Currently, we have publicly released the dataset, pre-trained models, and some code. We will release all code in the future.
+# 安装必要的第三方包
 
-感谢您对我们工作的关注，目前我们公开了数据集、预训练模型、以及部分代码，后续将公开所有代码
+在继续之前，请确保您已安装了以下必要的第三方包。您可以运行以下命令来安装它们：
 
-
-
-<img src="readme.assets/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%842.png" style="zoom: 33%;" />
-
-
-
-## 1. Datasets （数据集）
-
-you can download at [Baidu Netdisk](https://pan.baidu.com/s/1Vquf1WdyW28-e_thgjYsXA?pwd=2022 )
-
-<img src="readme.assets/SDIWRD数据集展示_en.png" style="zoom: 33%;" />
-
-
-
-## 2. Pretain Model（预训练模型）
-
-you can download at [Baidu Netdisk](https://pan.baidu.com/s/1zzDbuw_pON5K2LB7z-GpJg?pwd=2022)
-
-
-
-## 3. Environmental configuration（环境配置）
-
-### 3.1 create Paddle environment
-
-You can refer to  [PaddlePaddle official website](https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/pip/linux-pip.html) for installation
-
-### 3.2 Install necessary tool kit
-
-```shell
-pip install -r requirements.txt
+```
+pip install -r requirements.txt 
 ```
 
+# 下载数据集
 
+您可以从[百度网盘](https://pan.baidu.com/s/1Vquf1WdyW28-e_thgjYsXA?pwd=2022)下载所需的数据集。
 
-## 4. How to run scripts? (如何运行？)
+# 运行脚本
 
-```shell
-# train
-python train_SDIWRD_RWRNet.py
+完成环境配置后，您可以运行以下脚本：
+
+- 对以下文件修改配置
+
+```txt
+train_config.yml
 ```
 
-```shell
-# test
-python test.py
+- 训练脚本：
+
+```
+python train.py 
 ```
 
+- 测试脚本：
 
-
-
+```
+python test.py 
+```
 

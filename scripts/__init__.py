@@ -1,7 +1,8 @@
+# coding=utf-8
 """
-#-*- coding = utf-8 -*- 
-#@Time: 2023 05 05  上午10:42
-#@Author:JFZ
-#@File：__init__.py.py
-#@Software: PyCharm
+    @Project: RWRNet_Paddle
+    @Author：JFZ
+    @File： __init__.py.py
+    @Date：2023/11/21 16:57
+    @EnvConfig: pytorch 1.12.1 + cu116
 """
