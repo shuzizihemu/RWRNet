@@ -61,7 +61,7 @@ def run(model_weights, val_dir, print_freq):
 
 
 if __name__ == '__main__':
-    model_weights = r"output/models/model_best.pdparams"
+    model_weights = r"model_best.pdparams"
     val_dir = r"E:\Python_Demo\Datasets\SDIWRD"
     print_freq = 100
     run(model_weights, val_dir, print_freq)

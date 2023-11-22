@@ -40,7 +40,7 @@ class LoadSDIWRD(Dataset):
         wm = np.array(wm)
         gt = Image.open(osp.join(self.gt, "{}.jpg".format(img_id))).convert("RGB")
         gt = np.array(gt)
-        mask = Image.open(osp.join(self.mask, "{}.png".format(img_id))).convert("L")
+        mask = Image.open(osp.join(self.mask, "{}.jpg".format(img_id))).convert("L")
         if self.type == "train":
             wm, gt, mask = random_augmentation(wm, gt, mask)
         gt = self.totensor(gt)

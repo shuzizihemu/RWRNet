@@ -16,10 +16,10 @@ TRAINING:
   END_EPOCH: 100
   TRAIN_PS: 256
   VAL_PS: 256
-  RESUME: False
-  RESUME_PATH: None
+  RESUME: True
+  RESUME_PATH: "model_best.pdparams"
   PRINT_FREQ: 100
-  TRAIN_DIR: 'SDIWRD'   # path to training data
-  VAL_DIR: 'SDIWRD'     # path to validation data
+  TRAIN_DIR: 'E:\Python_Demo\Datasets\SDIWRD'   # path to training data
+  VAL_DIR: 'E:\Python_Demo\Datasets\SDIWRD'     # path to validation data
   SAVE_ROOT: "output"
   SAVE_IMAGES: True

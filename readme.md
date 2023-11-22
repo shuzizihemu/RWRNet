@@ -29,21 +29,13 @@ pip install -r requirements.txt
 
 # 运行脚本
 
-完成环境配置后，您可以运行以下脚本：
-
-- 对以下文件修改配置
-
-```txt
-train_config.yml
-```
-
-- 训练脚本：
+完成环境配置后，对以下文件`train_config.yml`修改配置，您可以运行以下脚本进行训练：
 
 ```
 python train.py 
 ```
 
-- 测试脚本：
+运行以下脚本进行测试：
 
 ```
 python test.py 

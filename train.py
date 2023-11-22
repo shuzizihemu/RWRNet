@@ -111,8 +111,8 @@ class Trainer(object):
         self.global_print_step = ckpt["global_print_step"]
         self.model.set_state_dict(ckpt['state_dict'])
         self.optimizer.set_state_dict(ckpt['optimizer'])
-        print("从{}加载权重成功！！\n最佳avg_psnr epoch = {} 当前继续训练的epoch = {}".format(path, ckpt["epoch"],
-                                                                                            self.start_epoch, ))
+        print("\n\nLoaded weights from {} successfully!\nCurrent training progress: {} epochs trained\nBest average PSNR: {:.2f} dB \nTraining will resume from epoch {}.\n\n".format(path, ckpt["epoch"], self.best_psnr, self.start_epoch))
+
 
     def train(self):
         for epoch in range(self.start_epoch, self.end_epoch + 1):
