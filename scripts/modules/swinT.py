@@ -132,15 +132,6 @@ def windows_partition(x, window_size):
 
 
 def windows_reverse(windows, window_size, H, W):
-    """ Window reverse
-    Args:
-        windows: (n_windows * B, window_size, window_size, C)
-        window_size: (int) window size
-        H: (int) height of image
-        W: (int) width of image
-    Returns:
-        x: (B, H, W, C)
-    """
 
     B = int(windows.shape[0] / (H * W / window_size / window_size))
     x = windows.reshape([B, H // window_size, W // window_size, window_size, window_size,
@@ -390,21 +381,7 @@ class SwinTransformerBlock(nn.Layer):
 
 
 class SwinT(nn.Layer):
-    """
-    the input shape and output shape is euqal to Conv2D
-    use this module can replace Conv2D by SwinT in any scene
-    Attribute:
-    input_channels:the channels of inputs
-    resolution:the only different from cnn, it need resolution to detemine its forward process
-    attention_parameters:{num_heads, window_size, mlp_ratio, qkv_bias, qk_scale, dropout, attention_dropout, droppath}
-    downsample:like cnn pooling, default:False
-
-    没有使用output_channels因为，transformer本身提取特征能力很强，另外下采样会使用patch_merging进行维度*2
-    另外由于其输入和输出与CNN完全一致，所以扩大通道可以直接在前面加卷积。
-    虽然有那么一点点不一样，但是因为我们搭建网络还是会把图像大小这样重要信息记一下，所以问题不是很大
-    重要的是，它可以完全替换掉任意基于卷积模型中的二维卷积层，因为输入和输出形状完全同卷积，因此十分方便
-    在卷积和注意力混用的模型中会更加方便，非常希望飞桨能将此接口加入到nn.SwinT中，并进行优化
-    """
+    
 
     def __init__(self, in_channels, out_channels, input_resolution, num_heads, window_size,
                  mlp_ratio=4., qkv_bias=True, qk_scale=None, dropout=0.,
