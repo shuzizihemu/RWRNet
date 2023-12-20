@@ -1,6 +1,4 @@
-"""
-scripts if from https://aistudio.baidu.com/aistudio/projectdetail/3288357
-"""
+
 
 import paddle
 import paddle.nn as nn
