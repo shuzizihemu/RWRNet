@@ -236,7 +236,7 @@ class Trainer(object):
             info = "now is psnr is best, save!!!"
             print(info)
             self.txtlogwriter.write(info)
-            for i in range(1, 1314 + 1):
+            for i in range(1, self.testsets_len + 1):
                 try:
                     shutil.copyfile(
                         os.path.join(self.pred_image_dir, "{}.png".format(i)),
