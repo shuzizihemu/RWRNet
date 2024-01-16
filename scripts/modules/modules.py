@@ -170,13 +170,13 @@ class GLFEBlock(nn.Layer):
             self.downsample = conv_down(outchannel, outchannel, bias=False)
 
     def forward(self, x, enc=None, dec=None):
-        out = self.swin1(x)
-        if self.use_IN:
-            feature1, feature2 = paddle.chunk(out, chunks=2, axis=1)
-            out = paddle.concat((self.norm(feature1), feature2), axis=1)
+        out1 = self.swin1(x)
+        
+        feature1, feature2 = paddle.chunk(out1, chunks=2, axis=1)
+        out = paddle.concat((self.norm(feature1), feature2), axis=1)
         out = self.relu1(out)
         out = self.relu2(self.conv2(out))
-        out = out + self.identity(x)
+        out = out + self.identity(out1)
         if enc is not None and dec is not None:
             assert self.use_rff
             out = self.rffModule(out, enc, dec)
