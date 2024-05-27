@@ -1,4 +1,0 @@
-yacs
-scikit-image
-visualdl
-opencv-python==4.4.0.46
